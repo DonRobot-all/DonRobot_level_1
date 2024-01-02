@@ -1,6 +1,9 @@
 def main():
     phrases = input()
-    print(type(phrases))
+    cost = input()
+    if cost == '-':
+        return len(phrases) * 60
+    return len(phrases) * int(cost)
 
 
 if __name__ == '__main__':
